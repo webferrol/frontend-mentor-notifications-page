@@ -1,0 +1,101 @@
+@import "./base.css";
+
+/*index.html*/
+#app{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+    font-family: 'Jakarta Regular',sans-serif;
+    font-size: var(--paragraph-font-size);
+    background-color: var(--very-light-grayish-blue);
+  }
+
+
+
+/*app.vue*/
+.container{
+    min-width: var(--mobile-width);
+    max-width: var(--desktop-width);
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .notifications{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+        .main-header__mark-all{
+            text-decoration: none;
+            color:var(--grayish-blue);
+        }
+        
+        .main-header__number{
+            padding: 0 .8rem;
+            color: var(--white);
+            background-color: var(--primary-blue);
+            border-radius: .5rem;
+        }
+
+
+/*TheNotification.vue*/
+.notification {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: .8rem;
+    
+}
+.notification--unread {
+        background-color: var(--light-grayish-blue-1);
+    }
+.notification__message{
+    display: grid;
+    gap: 1rem;
+}
+    .message__date {
+        color: var(--grayish-blue);
+    }
+    .message__private {
+        padding: 2rem;
+        border: 1px solid var(--grayish-blue);
+        color: var(--dark-grayish-blue);
+        border-radius: .5rem;
+    }
+        .text-club {
+            font-family: 'Jakarta Medium', sans-serif;
+            ;
+            color: var(--primary-blue);
+        }
+
+        .text-notification-title {
+            color: var(--very-dark-blue);
+            font-style: normal;
+        }
+
+
+        .text-server {
+            color: var(--dark-grayish-blue);
+        }
+
+
+        .text-unread {
+            display: inline-block;
+            line-height: .8rem;
+            height: .8rem;
+            margin-left: .3rem;
+            width: .8rem;
+            text-indent: -9999rem;
+            background-color: var(--primary-red);
+            border-radius: 50%;
+            cursor: pointer;
+        }
