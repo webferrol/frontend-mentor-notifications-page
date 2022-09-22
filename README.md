@@ -2,9 +2,6 @@
 
 This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Reto para diseño y presentación de datos de una página con notificacaciones.
-[Enlace](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC)
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -15,9 +12,15 @@ Reto para diseño y presentación de datos de una página con notificacaciones.
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+1 See CSS:
+  - [./src/assets/base.css](./src/assets/base.css)
+  - [./src/assets/main.css](./src/assets/main.css)
+  
+2 See HTML:
+  - [./src/App.vue](./src/App.vue)
+  - [./src/components/TheNotification.vue](./src/components/TheNotification.vue)
 
 ### The challenge
 

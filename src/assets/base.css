@@ -48,3 +48,14 @@
 h1,h2{
   font-family: 'Jakarta Bold', sans-serif;
 }
+
+a{
+  text-decoration: none;
+}
+a,
+a:hover, 
+a:target, 
+a:visited,
+a:link{
+  outline-style: none;
+}

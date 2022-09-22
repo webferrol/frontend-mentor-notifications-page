@@ -113,11 +113,11 @@ const notifications = ref<Notification[]>([
 <template>
   <section class="container">
     <header class="main-header">
-      <h1 class="main-header__title">Notifications <span class="main-header__number">{{noRead}}</span></h1>
+      <h1 class="main-header__title">Notifications <span class="badge">{{noRead}}</span></h1>
       <a href="#" @click.prevent="handleRead" class="main-header__mark-all">Mark all as read</a>
     </header>
-    <div class="notifications">
+    <section class="notifications">
       <TheNotification @markRead="markRead" v-for="item in notifications" :key="item.id" v-bind="item"></TheNotification>
-    </div>
+    </section>
   </section>
 </template>

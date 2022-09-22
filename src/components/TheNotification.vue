@@ -22,21 +22,21 @@ withDefaults(defineProps<Notification>(), {
 });
 </script>
 <template>
-    <div class="notification" :class="{'notification--unread':!read}">
+    <article class="notification" :class="{'notification--unread':!read}">
         <img class="notification__img" :src="imgSrc" :alt="author">
         <div class="notification__message">
             <div class="message__content"
                 style="display: flex; align-items: center;flex-wrap: wrap; column-gap: .2rem;">
                 <strong>{{author}}</strong>
                 <span class="text-server">{{message.messageServer}}</span>
-                <span class="text-club">{{club}}</span>
-                <em class="text-notification-title">{{message?.notificationTitle}}</em>
+                <a @click.prevent href="#" class="text-club">{{club}}</a>
+                <a @click.prevent href="#" class="text-notification-title">{{message?.notificationTitle}}</a>
                 <span @click="$emit('markRead',id)" class="text-unread" v-if="!read">No leído</span>
             </div>
-            <span class="message__date">{{date}}</span>
+            <time class="message__date">{{date}}</time>
             <div class="message__private" v-if="messagePrivate">
                 {{messagePrivate}}
             </div>
         </div>
-    </div>
+    </article>
 </template>

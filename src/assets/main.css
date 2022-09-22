@@ -38,7 +38,7 @@
             color:var(--grayish-blue);
         }
         
-        .main-header__number{
+        .badge{
             padding: 0 .8rem;
             color: var(--white);
             background-color: var(--primary-blue);
@@ -55,12 +55,16 @@
     border-radius: .8rem;
     
 }
-.notification--unread {
+    .notification:hover:not(.notification--unread){
         background-color: var(--light-grayish-blue-1);
+        cursor: pointer;
+    }
+.notification--unread {
+        background-color: var(--very-light-grayish-blue);
     }
 .notification__message{
     display: grid;
-    gap: 1rem;
+    row-gap: .5rem;
 }
     .message__date {
         color: var(--grayish-blue);
@@ -71,16 +75,15 @@
         color: var(--dark-grayish-blue);
         border-radius: .5rem;
     }
-        .text-club {
-            font-family: 'Jakarta Medium', sans-serif;
-            ;
-            color: var(--primary-blue);
-        }
+       
 
-        .text-notification-title {
+        .text-notification-title,.text-club{
             color: var(--very-dark-blue);
-            font-style: normal;
+            font-family: 'Jakarta Bold', sans-serif;
         }
+            .text-notification-title:hover,.text-club:hover{
+                color:var(--primary-blue);
+            }
 
 
         .text-server {
