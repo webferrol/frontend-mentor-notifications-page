@@ -42,7 +42,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://frontend-mentor-notifications-page.netlify.app/)
+- Solution URL: [Github](https://github.com/webferrol/frontend-mentor-notifications-page)
 - Live Site URL: [Netlify](https://frontend-mentor-notifications-page.netlify.app/)
 
 ## My process
